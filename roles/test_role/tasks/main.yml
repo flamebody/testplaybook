@@ -1,0 +1,5 @@
+- name: Add Users
+  user: name={{ item.user }} group={{ item.group }} groups={{ item.groups }}  shell={{ item.shell }} home={{ item.home }} ssh_key_file={{ item.ssh_key_file }} comment={{ item.comment }}
+  with_items:
+   - ssh_users
+   - ssh_superusers

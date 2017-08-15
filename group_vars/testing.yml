@@ -1,0 +1,8 @@
+ssh_users:
+   -{ user:'morty',group:'morty', shell:'/bin/sh', home:'/var/tmp/morty',ssh_key_file:'./public_keys/morty.pub' comment:'Morty Smith'}
+   -{ user:'beth',group:'beth', shell:'/bin/sh', home:'/home/beth',ssh_key_file:'./public_keys/beth.pub' comment:'Beth Smith'}
+   -{ user:'jerry',group:'jerry', shell:'/bin/bash', home:'/tmp/jerry', ssh_key_file:'./public_keys/jerry.pub' comment:'Jerry Smith'}
+   -{ user:'summer',group:'summer', shell:'/bin/sh', home:'/home/summer',ssh_key_file:'./public_keys/summer.pub' comment:'Summer Smith'}
+
+ssh_superusers:
+  -{ user:'sanchez',group:'sanchez',groups:'sudo', shell:'/bin/bash', home:'/home/sanchez',ssh_key_file:'./public_keys/sanchez.pub' comment:'Rick Sanchez'}
